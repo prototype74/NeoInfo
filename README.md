@@ -7,6 +7,7 @@ Additionally it displays some more or less important information such as the
 current CSC, front cam type and more.
 
 ## Screenshots
+<img src="images/app_main_general.jpg" width="360" height="640" /> <img src="images/app_main_camera.jpg" width="360" height="640" /> <img src="images/app_main_camera2.png" width="360" height="640" />
 
 ## Download
 
