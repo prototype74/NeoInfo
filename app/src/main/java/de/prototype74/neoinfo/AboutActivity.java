@@ -48,8 +48,7 @@ public class AboutActivity extends AppCompatActivity {
         buttonOpenSource.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent githubIntent =  new Intent(Intent.ACTION_VIEW);
-                // TODO: correct source link
-                githubIntent.setData(Uri.parse(""));
+                githubIntent.setData(Uri.parse("https://github.com/prototype74/NeoInfo"));
                 startActivity(githubIntent);
             }
         });
