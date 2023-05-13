@@ -1,0 +1,29 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="@string/basics_header"
+        app:iconSpaceReserved="false" >
+
+        <ListPreference
+            app:defaultValue="default"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:key="theme_settings"
+            app:title="@string/theme_title"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/advanced_header"
+        app:iconSpaceReserved="false" >
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="display_advance_info"
+            android:title="@string/display_advanced"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

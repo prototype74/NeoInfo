@@ -1,0 +1,14 @@
+<resources>
+    <!-- App Theme Preference -->
+    <string-array name="theme_entries">
+        <item>@string/theme_default</item>
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>default</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+</resources>

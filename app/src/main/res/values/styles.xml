@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:tint">@color/white</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="ToolbarThemeSettings" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:tint">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="ToolbarTextSettings" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

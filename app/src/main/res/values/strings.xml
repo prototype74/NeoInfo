@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">NeoInfo</string>
+    <string name="unknown">Unknown</string>
+
+    <!-- Tab Item Titles -->
+    <string name="general">General</string>
+    <string name="camera">Camera</string>
+    <string name="misc">Misc</string>
+
+    <!-- General tab -->
+    <string name="bootloader">Bootloader</string>
+    <string name="pda">AP/PDA</string>
+    <string name="csc">CSC</string>
+    <string name="baseband">Baseband/Modem</string>
+    <string name="device_variant">Device variant</string>
+    <string name="android_ver">Android version</string>
+    <string name="android_api">Android API level</string>
+    <string name="build_number">Build number</string>
+
+    <!-- Camera tab -->
+    <string name="fw_back_type">Firmware back camera type</string>
+    <string name="kernel_back_type">Kernel back camera type</string>
+    <string name="vendor_back_type">Vendor back camera type</string>
+    <string name="rear_camera_note">Back camera type note</string>
+    <string name="rear_camera_status">Back camera status</string>
+    <string name="cam_result_okay">Your back camera types are okay</string>
+    <string name="cam_result_fail">Unable to check your back camera type</string>
+    <string name="cam_result_fail_fw_match">Your back camera firmware type does not match the vendor type</string>
+    <string name="cam_result_fail_kernel_match">Your back camera kernel type does not match the others but it should not affect the camera functionality</string>
+    <string name="cam_status_okay">Working</string>
+    <string name="cam_status_warn">Vendor initialized but sensor may not work</string>
+    <string name="cam_status_fail">Not working</string>
+    <string name="kernel_front_type">Kernel front camera type</string>
+
+    <!-- Misc tab -->
+    <string name="charger_driver">Battery/Charger driver</string>
+    <string name="stock_charger">Stock (qpnp-sec-charger)</string>
+    <string name="new_charger">New (sec-battery, qpnp-charger)</string>
+    <string name="usb_host">USB Host</string>
+
+    <!-- Menus -->
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="title_activity_settings">@string/settings</string>
+    <string name="title_activity_about">@string/about</string>
+
+    <!-- SettingsActivity -->
+    <string name="restart_app_prompt">Restart %s to apply the change!</string>
+    <!-- Preference Titles -->
+    <string name="basics_header">Basics</string>
+    <string name="advanced_header">Advanced</string>
+
+    <!-- General Preferences -->
+    <string name="theme_title">App Theme</string>
+    <string name="theme_default">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- Advanced Preferences -->
+    <string name="display_advanced">Display more information</string>
+
+    <!-- AboutActivity -->
+    <string name="app_version">Version %s</string>
+    <string name="by_name">by %s</string>
+    <string name="app_description">NeoInfo is a tool for the Samsung Galaxy S3 Neo which aim to figure out the bootloader, modem and camera sensor of the device. Those information are the most important prerequisites for modern Custom ROMs. Additionally it displays some more or less important information such as the current CSC, front cam type and more.</string>
+    <string name="button_view_source_github">View Source Code on GitHub</string>
+</resources>
