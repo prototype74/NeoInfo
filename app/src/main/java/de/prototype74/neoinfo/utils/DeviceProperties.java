@@ -86,7 +86,9 @@ public class DeviceProperties {
         try {
             Process bbp = Runtime.getRuntime().exec("getprop " + key);
             BufferedReader in = new BufferedReader(new InputStreamReader(bbp.getInputStream()));
-            result = in.readLine();
+            String temp_result = in.readLine();
+            if (!temp_result.isEmpty())
+                result = temp_result;
             in.close();
             bbp.destroy();
         } catch (Exception e) {
