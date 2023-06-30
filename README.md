@@ -10,6 +10,12 @@ current CSC, front cam type and more.
 <img src="images/app_main_general.jpg" width="360" height="640" /> <img src="images/app_main_camera.jpg" width="360" height="640" /> <img src="images/app_main_camera2.png" width="360" height="640" />
 
 ## Download
+Check out the [release section](https://github.com/prototype74/NeoInfo/releases) to get the latest APK
+
+## App Permissions
+
+### Camera
+- On Android 4.4, access to the Camera is needed to get two specific rear camera characteristics in order to check if the rear camera does actually work. On Android 5.0 or newer this permission is not required.
 
 ## License
 
