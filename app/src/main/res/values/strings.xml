@@ -36,7 +36,12 @@
     <string name="charger_driver">Battery/Charger driver</string>
     <string name="stock_charger">Stock (qpnp-sec-charger)</string>
     <string name="new_charger">New (sec-battery, qpnp-charger)</string>
-    <string name="usb_host">USB Host</string>
+    <string name="usb_host_notify">USB Host Notify</string>
+    <string name="usb_otg_power">OTG Power Regulator</string>
+    <string name="supported">Supported</string>
+    <string name="not_supported">Not supported</string>
+    <string name="active">Active</string>
+    <string name="disabled">Disabled</string>
 
     <!-- Menus -->
     <string name="settings">Settings</string>
