@@ -87,7 +87,7 @@ public class Utils {
      *
      * @return true=path exists, false=path doesn't exist
      */
-    private static boolean checkPathExist(String path) {
+    protected static boolean checkPathExist(String path) {
         File file = new File(path);
         return file.exists();
     }
