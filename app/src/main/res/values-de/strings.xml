@@ -1,0 +1,58 @@
+<resources>
+    <string name="unknown">Unbekannt</string>
+
+    <!-- Tab Item Titles -->
+    <string name="general">Allgemein</string>
+    <string name="camera">Kamera</string>
+    <string name="misc">Driverses</string>
+
+    <!-- General tab -->
+    <string name="baseband">Basisband/Modem</string>
+    <string name="device_variant">Gerätemodell</string>
+    <string name="android_ver">Android-Version</string>
+    <string name="android_api">Android API-Level</string>
+    <string name="build_number">Buildnummer</string>
+
+    <!-- Camera tab -->
+    <string name="rear_unspecific_sensor">Unspezifisch</string>
+    <string name="rear_camera_status">Rückkamera-Status</string>
+    <string name="cam_status_okay">Betriebsbereit</string>
+    <string name="cam_status_warn">Vendor wurde initialisiert aber der Kamerasensor funktioniert möglicherweise nicht</string>
+    <string name="cam_status_fail">Außer Funktion</string>
+
+    <!-- Misc tab -->
+    <string name="charger_driver">Akku/Lade-Treiber</string>
+    <string name="new_charger">sec-battery, qpnp-charger (neu)</string>
+    <string name="usb_host_notify">USB-Host-Notify</string>
+    <string name="usb_otg_power">OTG-Power-Regulator</string>
+    <string name="supported">Unterstützt</string>
+    <string name="not_supported">Nicht unterstützt</string>
+    <string name="active">Aktiv</string>
+    <string name="disabled">Deaktiviert</string>
+
+    <!-- Menus -->
+    <string name="settings">Einstellungen</string>
+    <string name="about">Über</string>
+    <string name="title_activity_settings">@string/settings</string>
+    <string name="title_activity_about">@string/about</string>
+
+    <!-- SettingsActivity -->
+    <string name="restart_app_prompt">Starte %s neu, um die Änderungen anzuwenden!</string>
+    <!-- Preference Titles -->
+    <string name="basics_header">Allgemein</string>
+    <string name="advanced_header">Erweitert</string>
+
+    <!-- General Preferences -->
+    <string name="theme_title">App-Design</string>
+    <string name="theme_default">Standardeinstellung des Systems</string>
+    <string name="theme_light">Hell</string>
+    <string name="theme_dark">Dunkel</string>
+
+    <!-- Advanced Preferences -->
+    <string name="display_advanced">Weitere Informationen anzeigen</string>
+
+    <!-- AboutActivity -->
+    <string name="by_name">Autor: %s</string>
+    <string name="app_description">NeoInfo ist ein Tool für das Samsung Galaxy S3 Neo, dessen Ziel es ist, den Bootloader, Modem und Kamerasensor des Gerätes herauszufinden. Diese Informationen sind eines der wichtigsten Voraussetzungen für moderne Custom ROMs. Zusätzlich können weniger relevante Informationen wie das CSC, Frontkamera-Modell und mehr angezeigt werden.</string>
+    <string name="button_view_source_github">Quellcode auf GitHub ansehen</string>
+</resources>

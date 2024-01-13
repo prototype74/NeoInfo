@@ -64,7 +64,7 @@
 
     <!-- AboutActivity -->
     <string name="app_version">Version %s</string>
-    <string name="by_name">by %s</string>
+    <string name="by_name">Author: %s</string>
     <string name="app_description">NeoInfo is a tool for the Samsung Galaxy S3 Neo which aim to figure out the bootloader, modem and camera sensor of the device. Those information are the most important prerequisites for modern Custom ROMs. Additionally it displays some more or less important information such as the current CSC, front cam type and more.</string>
     <string name="button_view_source_github">View Source Code on GitHub</string>
 </resources>
