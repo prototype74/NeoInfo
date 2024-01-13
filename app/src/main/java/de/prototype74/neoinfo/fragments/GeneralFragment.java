@@ -16,7 +16,6 @@ public class GeneralFragment extends MainFragment {
 
     @Override
     protected void initContentsToList(View view, List<HashMap<String, String>> contents) {
-        String subText;
         String orange_color = String.valueOf(getResources().getColor(R.color.orange));
         String red_color = String.valueOf(getResources().getColor(R.color.red));
         int status; // 0=Okay, 1=Warning, 2=Critical
@@ -25,7 +24,7 @@ public class GeneralFragment extends MainFragment {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
         boolean advance_info = prefs.getBoolean("display_advance_info", false);
 
-        subText = DeviceProperties.getBootloader();
+        String subText = DeviceProperties.getBootloader();
         if (subText != null) {
             status = Utils.isBootloaderOld();
             if (status == 1)

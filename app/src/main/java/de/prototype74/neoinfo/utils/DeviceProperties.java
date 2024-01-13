@@ -12,10 +12,7 @@ public class DeviceProperties {
      * @return the bootloader version else null if it's unknown
      */
     public static String getBootloader() {
-        if (!Build.BOOTLOADER.equals(Build.UNKNOWN)) {
-            return Build.BOOTLOADER;
-        }
-        return null;
+        return !Build.BOOTLOADER.equals(Build.UNKNOWN) ? Build.BOOTLOADER : null;
     }
 
     /**
@@ -24,9 +21,7 @@ public class DeviceProperties {
      * @return the baseband/modem version else null if it's unknown
      */
     public static String getBaseband() {
-        if (Build.getRadioVersion() != null)
-            return Build.getRadioVersion();
-        return null;
+        return Build.getRadioVersion() != null ? Build.getRadioVersion() : null;
     }
 
     /**
