@@ -27,8 +27,8 @@
     <string name="kernel_front_camera">Kernel (front)</string>
     <string name="rear_camera_status">Rear camera status</string>
     <string name="cam_status_okay">Working</string>
-    <string name="cam_status_warn">Vendor initialized but sensor may not work</string>
-    <string name="cam_status_fail">Not working</string>
+    <string name="cam_status_warn">Vendor initialized but the camera sensor may not work</string>
+    <string name="cam_status_fail">Out of service</string>
 
     <!-- Misc tab -->
     <string name="charger_driver">Battery/Charger driver</string>
