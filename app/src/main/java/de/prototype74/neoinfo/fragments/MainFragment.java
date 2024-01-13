@@ -19,6 +19,9 @@ import de.prototype74.neoinfo.R;
 import de.prototype74.neoinfo.utils.Utils;
 
 public abstract class MainFragment extends Fragment {
+    protected List<HashMap<String, String>> contents = new ArrayList<HashMap<String, String>>();
+    protected SimpleAdapter adapter;
+
     protected void addNewContent(List<HashMap<String, String>> contents, String title, String value,
                                  String textColor) {
         HashMap<String, String> elem = new HashMap<String, String>();
@@ -26,6 +29,15 @@ public abstract class MainFragment extends Fragment {
         elem.put("value", value);
         elem.put("color", textColor);
         contents.add(elem);
+    }
+
+    protected void updateContent(List<HashMap<String, String>> contents, int index, String title, String value,
+                                 String textColor) {
+        HashMap<String, String> elem = new HashMap<String, String>();
+        elem.put("title", title);
+        elem.put("value", value);
+        elem.put("color", textColor);
+        contents.set(index, elem);
     }
 
     protected void initContentsToList(View view, List<HashMap<String, String>> contents) {}
@@ -47,10 +59,9 @@ public abstract class MainFragment extends Fragment {
         ListView mainListView = view.findViewById(R.id.mainListView);
 
         Utils.setVendorPaths();
-        List<HashMap<String, String>> contents = new ArrayList<HashMap<String, String>>();
         initContentsToList(view, contents);
 
-        SimpleAdapter adapter = new SimpleAdapter(view.getContext(),
+        adapter = new SimpleAdapter(view.getContext(),
                 contents,
                 android.R.layout.simple_list_item_2,
                 new String[] {"title", "value"},
