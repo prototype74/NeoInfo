@@ -50,7 +50,7 @@ public class CameraFragment extends MainFragment {
         else if (result == 1)
             text = getString(R.string.rear_sony_sensor);
         else if (result == 2)
-            text = getString(R.string.rear_mixed_sensors);
+            text = getString(R.string.rear_unspecific_sensor);
         addNewContent(contents, text, cameraSensorInfo, null);
 
         result = CameraUtils.getBackCameraStatus(view.getContext());

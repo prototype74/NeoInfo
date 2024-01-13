@@ -20,7 +20,7 @@
     <!-- Camera tab -->
     <string name="rear_samsung_sensor">Samsung Sensor</string>
     <string name="rear_sony_sensor">Sony Sensor</string>
-    <string name="rear_mixed_sensors">Mixed Sensors</string>
+    <string name="rear_unspecific_sensor">Unspecific</string>
     <string name="fw_rear_camera">Firmware</string>
     <string name="kernel_rear_camera">Kernel</string>
     <string name="vendor_rear_camera">Vendor</string>

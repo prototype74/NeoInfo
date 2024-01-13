@@ -182,7 +182,7 @@ public class Utils {
      * Try to figure out the built-in rear camera sensor type
      *
      * @param context Context from an app activity
-     * @return -1=unable to check, 0=Samsung Sensor, 1=Sony Sensor, 2=Mixed Sensors
+     * @return -1=unable to check, 0=Samsung Sensor, 1=Sony Sensor, 2=Unspecific
      */
     public static int getBackCameraTypeResult(Context context) {
         String fw_type;
