@@ -10,7 +10,6 @@ import androidx.preference.PreferenceManager;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FilenameFilter;
 import java.io.InputStreamReader;
 
 public class Utils {
@@ -150,19 +149,11 @@ public class Utils {
      */
     private static boolean vendorBlobsExist(String prefix) {
         File lib_dir = new File(lib_path);
-        File[] lib_files = lib_dir.listFiles(new FilenameFilter() {
-            @Override
-            public boolean accept(File dir, String name) {
-                return name.startsWith(prefix) && name.endsWith(".so");
-            }
-        });
+        File[] lib_files = lib_dir.listFiles(
+                (dir, name) -> name.startsWith(prefix) && name.endsWith(".so"));
         File vendor_dir = new File(vendor_path);
-        File[] vendor_files = vendor_dir.listFiles(new FilenameFilter() {
-            @Override
-            public boolean accept(File dir, String name) {
-                return name.startsWith(prefix) && name.endsWith(".so");
-            }
-        });
+        File[] vendor_files = vendor_dir.listFiles(
+                (dir, name) -> name.startsWith(prefix) && name.endsWith(".so"));
         if (lib_files != null && vendor_files != null) {
             return lib_files.length > 0 && vendor_files.length > 0;
         }
@@ -188,31 +179,39 @@ public class Utils {
     }
 
     /**
-     * This method compares the result from all 3 reported camera types methods
-     * (getBackCameraTypeByFirmware(), getCameraTypeByKernel(), getBackCameraTypeByVendor())
+     * Try to figure out the built-in rear camera sensor type
      *
-     * @return -1=unable to check, 0=okay, 1=kernel type doesn't match, 2=fw and vendor types don't
-     * match
+     * @param context Context from an app activity
+     * @return -1=unable to check, 0=Samsung Sensor, 1=Sony Sensor, 2=Mixed Sensors
      */
-    public static int getBackCameraTypeResult() {
-        String fw_type = getBackCameraTypeByFirmware();
-        String k_type = getCameraTypeByKernel(false);
+    public static int getBackCameraTypeResult(Context context) {
+        String fw_type;
         String v_type = getBackCameraTypeByVendor();
+        int cam_status;
 
-        if (fw_type == null || v_type == null || v_type.equals(SAMSUNG_AND_SONY_CAMERA))
+        if (v_type == null)
             return -1;
 
-        if (k_type == null) {
-            if (fw_type.equals(v_type))
+        if (v_type.equals(SAMSUNG_AND_SONY_CAMERA))
+            return 2;
+
+        cam_status = CameraUtils.getBackCameraStatus(context);
+        if (cam_status >= 0) {
+            if (v_type.equals(SAMSUNG_CAMERA))
                 return 0;
-        } else {
-            if (fw_type.equals(v_type) && v_type.equals(k_type)) {
-                return 0;
-            } else if (fw_type.equals(v_type)) {
+            else if (v_type.equals(SONY_CAMERA))
                 return 1;
-            }
         }
-        return 2;
+
+        fw_type = getBackCameraTypeByFirmware();
+        if (fw_type != null) {
+            if (fw_type.equals(SAMSUNG_CAMERA))
+                return 0;
+            else if (fw_type.equals(SONY_CAMERA))
+                return 1;
+        }
+
+        return -1;
     }
 
     /**

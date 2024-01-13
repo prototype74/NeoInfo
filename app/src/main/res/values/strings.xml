@@ -18,19 +18,17 @@
     <string name="build_number">Build number</string>
 
     <!-- Camera tab -->
-    <string name="fw_back_type">Firmware back camera type</string>
-    <string name="kernel_back_type">Kernel back camera type</string>
-    <string name="vendor_back_type">Vendor back camera type</string>
-    <string name="rear_camera_note">Back camera type note</string>
-    <string name="rear_camera_status">Back camera status</string>
-    <string name="cam_result_okay">Your back camera types are okay</string>
-    <string name="cam_result_fail">Unable to check your back camera type</string>
-    <string name="cam_result_fail_fw_match">Your back camera firmware type does not match the vendor type</string>
-    <string name="cam_result_fail_kernel_match">Your back camera kernel type does not match the others but it should not affect the camera functionality</string>
+    <string name="rear_samsung_sensor">Samsung Sensor</string>
+    <string name="rear_sony_sensor">Sony Sensor</string>
+    <string name="rear_mixed_sensors">Mixed Sensors</string>
+    <string name="fw_rear_camera">Firmware</string>
+    <string name="kernel_rear_camera">Kernel</string>
+    <string name="vendor_rear_camera">Vendor</string>
+    <string name="kernel_front_camera">Kernel (front)</string>
+    <string name="rear_camera_status">Rear camera status</string>
     <string name="cam_status_okay">Working</string>
     <string name="cam_status_warn">Vendor initialized but sensor may not work</string>
     <string name="cam_status_fail">Not working</string>
-    <string name="kernel_front_type">Kernel front camera type</string>
 
     <!-- Misc tab -->
     <string name="charger_driver">Battery/Charger driver</string>
