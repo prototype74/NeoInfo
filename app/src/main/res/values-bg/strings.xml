@@ -5,7 +5,7 @@
     <string name="camera">Камера</string>
     <string name="misc">Разни</string>
     <string name="bootloader">Буутлоудър</string>
-    <string name="baseband">Базов Диапазон/Модем</string>
+    <string name="baseband">Основната честота/Модем</string>
     <string name="device_variant">Вариант на устройтството</string>
     <string name="android_ver">Версия на Android</string>
     <string name="android_api">API версия на Android</string>
